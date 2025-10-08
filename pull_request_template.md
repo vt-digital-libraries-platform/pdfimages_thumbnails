@@ -6,7 +6,7 @@ The title of this pull-request should briefly summarize what it fixes or improve
 ## 🔗 Asana, 4Help, and Related Links [REQUIRED]  
 **Asana Ticket**: [Insert link]  
 **4Help Ticket (if applicable)**: [Insert link]  
-**Other References**: [PRs, notes, docs]  
+**Other References**: [PRs, notes, design files, docs]  
 
 
 
@@ -36,14 +36,19 @@ List key updates, features added/removed, or issues addressed.**
 
    
 ## ♿ Accessibility Testing [REQUIRED]
-**Please confirm accessibility checks relevant to your changes:**  
-  
-*[ ] Tested with screen readers  
-*[ ] Keyboard navigability confirmed  
-*[ ] Color contrast reviewed  
-*[ ] Accessible markup used (e.g., proper labels, roles)  
-*[ ] Other (please describe):  
-*[ ] N/A (component doesn't have a relevant accessibility for testing)  
+**Complete standard accessibility testing and provide additional test steps/details, if applicable:**  
+- [ ] Does this PR change anything in the front-end? This includes backend-only changes that may affect front end components (data schema changes, global configs, package version updates, etc.)
+
+**If "Yes", provide test environment details and complete or mark N/A all of the following tests:**
+
+OS/Browser/Screen reader details: *For Example: macOS Tahoe 26.0.1, Google Chrome v141.0.7390.55, VoiceOver v10*
+
+- [ ] [axe DevTools full/partial page scans]())
+- [ ] Keyboard navigability: Focus ring showing on all focusable/interactive elements in expected order, standard interaction present ([keyboard testing basics](https://knowbility.org/blog/2018/keyboard-testing-basics/))
+- [ ] Screen reader comprehension: No elements hidden from screen reader, alt text, no repeated text ([screen reader keyboard shortcuts](https://dequeuniversity.com/screenreaders/)) 
+- [ ] Color contrast at least WCAG AA ([contrast checker](https://webaim.org/resources/contrastchecker/))
+- [ ] Accessible markup used (e.g., proper heading levels, labels, roles, and semantic HTML as much as possible)  
+- [ ] Other accessibility testing (please describe):  
 
 
    
